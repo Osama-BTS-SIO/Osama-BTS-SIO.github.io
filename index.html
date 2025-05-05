@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Portfolio BTS SIO - AZRAF Osama </title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <nav>
+        <div class="datetime" id="datetime"></div>
+        <strong>AZRAF Osama</strong>
+        <a href="#home" class="nav-link active"><i class="fas fa-home icon"></i><span> Accueil</span></a>
+        <a href="#profile" class="nav-link"><i class="fas fa-id-card icon"></i><span> Profil</span></a>
+        <a href="#path" class="nav-link"><i class="fas fa-road icon"></i><span> Parcours</span></a>
+        <a href="#internships" class="nav-link"><i class="fas fa-briefcase icon"></i><span> Stages</span></a>
+        <a href="#skills" class="nav-link"><i class="fas fa-cogs icon"></i><span> Compétences</span></a>
+        <a href="#projects" class="nav-link"><i class="fas fa-project-diagram icon"></i><span> Projets</span></a>
+        <a href="#bts" class="nav-link"><i class="fas fa-laptop-code icon"></i><span> BTS SIO</span></a>
+        <a href="#exams" class="nav-link"><i class="fas fa-file-alt icon"></i><span> Épreuves</span></a>
+        <a href="#contact" class="nav-link"><i class="fas fa-envelope icon"></i><span> Contact</span></a>
+      </nav>
+      <footer class="sidebar-footer">
+        <p>© <span id="current-year"></span></p>
+        <p>Designed by <span id="designer-name">AZRAF Osama</span></p>
+      </footer>
+    </div>
+
+    <div class="main-content">
+      <section id="home" class="content-section accueil-section active">
+        <div class="presentation">
+          <h1 class="name">AZRAF Osama</h1>
+          <h2 class="bts">BTS SIO</h2>
+          <div class="typing-text">
+            <span id="typed-text"></span>
+          </div>
+        <div class="typing-container">
+          <h3 id="typing-text"></h3>
+        </div>
+        
+    </section>
+    
+
+      <section id="profile" class="content-section">
+        <h3>Profil</h3>
+        <p>Informations sur votre profil...</p>
+      </section>
+
+      <section id="path" class="content-section">
+        <h3>Mon Parcours</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2023 - 2025</div>
+            <div class="timeline-content">
+              <h4>BTS SIO - Option SISR</h4>
+              <p>Apprentissage des réseaux, systèmes, sécurité et virtualisation.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2020 - 2023</div>
+            <div class="timeline-content">
+              <h4>BAC Pro SN</h4>
+              <p>Découverte du monde numérique, matériel, réseau et domotique.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="internships" class="content-section">
+        <h3>Stages</h3>
+        <p>Détails sur les stages effectués...</p>
+      </section>
+
+      <section id="skills" class="content-section">
+        <h3>Compétences</h3>
+        <p>Liste des compétences techniques et personnelles...</p>
+      </section>
+
+      <section id="projects" class="content-section">
+        <h3>Projets</h3>
+        <p>Exemples de projets réalisés pendant la formation...</p>
+      </section>
+
+      <section id="bts" class="content-section">
+        <h3>BTS SIO</h3>
+        <p>
+            Le BTS SIO (Services Informatiques aux Organisations) propose deux spécialités selon votre profil :
+        </p>
+        
+        
+        <div class="bts-boxes">
+            <div class="bts-option sisr">
+                <h4>Option SISR</h4>
+                <p>La spécialité SISR (Solutions d’Infrastructure, Systèmes et Réseaux) est dédiée à la gestion des infrastructures réseaux, la sécurité informatique, et l'administration des systèmes. Les étudiants apprennent à installer, configurer et maintenir des serveurs, des réseaux, des équipements de sécurité, etc.</p>
+            </div>
+    
+            <div class="bts-option slam">
+                <h4>Option SLAM</h4>
+                <p>La spécialité SLAM (Solutions Logicielles et Applications Métiers) se concentre sur le développement logiciel. Les étudiants conçoivent, codent et testent des applications web, mobiles ou de bureau, en utilisant différents langages et frameworks.</p>
+            </div>
+        </div>
+    </section>
+    
+      <section id="exams" class="content-section">
+        <h3>Épreuves</h3>
+        <p>Description des épreuves et examens passés ou à venir...</p>
+      </section>
+
+      <section id="contact" class="content-section">
+        <h3>Contact</h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Votre nom" required />
+          <input type="email" placeholder="Votre email" required />
+          <textarea placeholder="Votre message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
