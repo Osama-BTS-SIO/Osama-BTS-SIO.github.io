@@ -48,25 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const text = "Bienvenue sur mon Portfolio.";
     const typingText = document.getElementById('typing-text');
     let index = 0;
-    let isDeleting = false;
 
     function typeEffect() {
-        if (!isDeleting) {
-            typingText.textContent = text.substring(0, index);
+        if (index < text.length) {
+            typingText.textContent += text.charAt(index);
             index++;
-            if (index > text.length) {
-                isDeleting = true;
-                setTimeout(typeEffect, 2000); // Petite pause avant d'effacer
-                return;
-            }
-        } else {
-            typingText.textContent = text.substring(0, index);
-            index--;
-            if (index < 0) {
-                isDeleting = false;
-            }
+            setTimeout(typeEffect, 100); // vitesse d'écriture
         }
-        setTimeout(typeEffect, isDeleting ? 50 : 100); // Vitesse d'écriture et d'effacement
     }
 
     typeEffect();
