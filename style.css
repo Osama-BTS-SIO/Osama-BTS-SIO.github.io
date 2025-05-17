@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 html {
@@ -102,7 +101,6 @@ section {
     text-align: center;
     position: relative;
     left: 370px;
-    
 }
 
 .profile-image img {
@@ -324,7 +322,6 @@ h2 {
     color: #ffffff;
     white-space: nowrap;
     overflow: hidden;
-
 }
 
 .fixed-header {
@@ -516,6 +513,7 @@ h2 {
         width: 100%;
     }
 }
+
 /* Couleur active orange */
 .sidebar nav .nav-link.active {
     background-color: #e67e22;
@@ -531,43 +529,43 @@ h2 {
 
 /* Couleurs personnalisées pour chaque icône du menu */
 .sidebar nav .nav-link[href="#home"] .icon {
-    color: #e74c3c; /* Rouge vif pour l'accueil */
+    color: #e74c3c;
 }
 
 .sidebar nav .nav-link[href="#profile"] .icon {
-    color: #1abc9c; /* Turquoise pour le profil */
+    color: #1abc9c;
 }
 
 .sidebar nav .nav-link[href="#bts"] .icon {
-    color: #3498db; /* Bleu pour BTS SIO */
+    color: #3498db;
 }
 
 .sidebar nav .nav-link[href="#path"] .icon {
-    color: #f39c12; /* Orange pour le parcours */
+    color: #f39c12;
 }
 
 .sidebar nav .nav-link[href="#internships"] .icon {
-    color: #9b59b6; /* Violet pour les stages */
+    color: #9b59b6;
 }
 
 .sidebar nav .nav-link[href="#skills"] .icon {
-    color: #2ecc71; /* Vert pour les compétences */
+    color: #2ecc71;
 }
 
 .sidebar nav .nav-link[href="#projects"] .icon {
-    color: #e67e22; /* Orange doux pour les projets */
+    color: #e67e22;
 }
 
 .sidebar nav .nav-link[href="#veille"] .icon {
-    color: #f1c40f; /* Jaune pour la veille */
+    color: #f1c40f;
 }
 
 .sidebar nav .nav-link[href="#exams"] .icon {
-    color: #95a5a6; /* Gris pour les épreuves */
+    color: #95a5a6;
 }
 
 .sidebar nav .nav-link[href="#contact"] .icon {
-    color: #e84393; /* Rose pour le contact */
+    color: #e84393;
 }
 
 /* Animation au survol */
@@ -575,6 +573,7 @@ h2 {
     transform: scale(1.2);
     transition: all 0.3s ease;
 }
+
 /* Section BTS SIO */
 #bts {
     background-color: #f8f9fa;
@@ -690,19 +689,15 @@ h2 {
     margin: 20px 0;
 }
 
- .skill-tag {
+.skill-tag {
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
     letter-spacing: 0.5px;
-    /* Couleur de texte toujours noire pour meilleur contraste */
-    color: #000 !important; 
-    /* Fond légèrement transparent */
+    color: #000 !important;
     background-color: rgba(255, 255, 255, 0.9) !important;
-    /* Ombre portée pour détacher du fond */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    /* Bordure subtile */
     border: 1px solid rgba(0,0,0,0.1);
 }
 
@@ -730,6 +725,7 @@ h2 {
         max-width: 100%;
     }
 }
+
 /* Structure principale */
 .bts-comparison {
     display: flex;
@@ -845,65 +841,67 @@ h2 {
         margin: 0 15px;
     }
 }
+
 /* Conteneur principal */
 .option-choice-indicator {
-  position: relative;
-  background: linear-gradient(135deg, rgba(230, 126, 34, 0.15) 0%, rgba(231, 76, 60, 0.15) 100%);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 25px 0;
-  border-left: 4px solid #e67e22;
-  display: flex;
-  align-items: center;
-  gap: 15px;
+    position: relative;
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.15) 0%, rgba(231, 76, 60, 0.15) 100%);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 25px 0;
+    border-left: 4px solid #e67e22;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 /* Main animée */
 .animated-hand {
-  font-size: 2rem;
-  animation: 
-    wave 1.5s ease infinite,
-    pulse 2s ease infinite;
-  transform-origin: right center;
+    font-size: 2rem;
+    animation: 
+        wave 1.5s ease infinite,
+        pulse 2s ease infinite;
+    transform-origin: right center;
 }
 
 /* Badge "Option choisie" */
 .choice-badge {
-  background: #e67e22;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  box-shadow: 0 3px 10px rgba(230, 126, 34, 0.3);
+    background: #e67e22;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 3px 10px rgba(230, 126, 34, 0.3);
 }
 
 .choice-badge i {
-  font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 /* Animations */
 @keyframes wave {
-  0%, 100% { transform: translateX(0) rotate(0deg); }
-  25% { transform: translateX(5px) rotate(10deg); }
-  50% { transform: translateX(0) rotate(0deg); }
-  75% { transform: translateX(5px) rotate(-10deg); }
+    0%, 100% { transform: translateX(0) rotate(0deg); }
+    25% { transform: translateX(5px) rotate(10deg); }
+    50% { transform: translateX(0) rotate(0deg); }
+    75% { transform: translateX(5px) rotate(-10deg); }
 }
 
 @keyframes pulse {
-  0% { opacity: 0.8; }
-  50% { opacity: 1; }
-  100% { opacity: 0.8; }
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
 }
 
 /* Effet au survol */
 .option-choice-indicator:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.2);
-  transition: all 0.3s ease;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.2);
+    transition: all 0.3s ease;
 }
+
 /* Animation au survol des options */
 .option-explanation {
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
