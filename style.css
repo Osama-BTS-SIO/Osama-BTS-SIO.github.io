@@ -249,7 +249,7 @@ h2 {
 }
 
 .sidebar nav a:hover {
-    background-color: #3498db;
+    background-color: #e67e22;
 }
 
 .sidebar .icon {
@@ -269,9 +269,15 @@ h2 {
     transition: color 0.3s ease;
 }
 
-.nav-link:hover .icon,
-.nav-link.active .icon {
-    color: #3498db;
+.nav-link.active, 
+.nav-link.active:hover {
+    background-color: #e67e22 !important;
+    color: white !important;
+}
+
+.nav-link.active .icon, 
+.nav-link.active:hover .icon {
+    color: white !important;
 }
 
 /* ===== BTS BOXES ===== */
@@ -509,4 +515,445 @@ h2 {
     .contact-form {
         width: 100%;
     }
+}
+/* Couleur active orange */
+.sidebar nav .nav-link.active {
+    background-color: #e67e22;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(230, 126, 34, 0.5);
+}
+
+/* Icônes des liens actifs */
+.sidebar nav .nav-link.active .icon {
+    color: white;
+}
+
+/* Couleurs personnalisées pour chaque icône du menu */
+.sidebar nav .nav-link[href="#home"] .icon {
+    color: #e74c3c; /* Rouge vif pour l'accueil */
+}
+
+.sidebar nav .nav-link[href="#profile"] .icon {
+    color: #1abc9c; /* Turquoise pour le profil */
+}
+
+.sidebar nav .nav-link[href="#bts"] .icon {
+    color: #3498db; /* Bleu pour BTS SIO */
+}
+
+.sidebar nav .nav-link[href="#path"] .icon {
+    color: #f39c12; /* Orange pour le parcours */
+}
+
+.sidebar nav .nav-link[href="#internships"] .icon {
+    color: #9b59b6; /* Violet pour les stages */
+}
+
+.sidebar nav .nav-link[href="#skills"] .icon {
+    color: #2ecc71; /* Vert pour les compétences */
+}
+
+.sidebar nav .nav-link[href="#projects"] .icon {
+    color: #e67e22; /* Orange doux pour les projets */
+}
+
+.sidebar nav .nav-link[href="#veille"] .icon {
+    color: #f1c40f; /* Jaune pour la veille */
+}
+
+.sidebar nav .nav-link[href="#exams"] .icon {
+    color: #95a5a6; /* Gris pour les épreuves */
+}
+
+.sidebar nav .nav-link[href="#contact"] .icon {
+    color: #e84393; /* Rose pour le contact */
+}
+
+/* Animation au survol */
+.sidebar nav .nav-link:hover .icon {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+/* Section BTS SIO */
+#bts {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.bts-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bts-header h3 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+.bts-subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+.bts-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.bts-keypoints {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.keypoint {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #3498db;
+}
+
+.bts-options-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bts-option {
+    flex: 1;
+    min-width: 300px;
+    max-width: 450px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.bts-option:hover {
+    transform: translateY(-10px);
+}
+
+.option-header {
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+
+.slam .option-header {
+    background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+}
+
+.sisr .option-header {
+    background: linear-gradient(135deg, #e67e22 0%, #d35400 100%);
+}
+
+.option-header i {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.option-header h4 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.option-subtitle {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.option-content {
+    padding: 25px;
+}
+
+.option-content ul {
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.option-content li {
+    margin-bottom: 8px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+ .skill-tag {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    /* Couleur de texte toujours noire pour meilleur contraste */
+    color: #000 !important; 
+    /* Fond légèrement transparent */
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    /* Ombre portée pour détacher du fond */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    /* Bordure subtile */
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.career {
+    font-style: italic;
+    color: #7f8c8d;
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.bts-footer {
+    max-width: 800px;
+    margin: 50px auto 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+    .bts-options-container {
+        flex-direction: column;
+    }
+    
+    .bts-option {
+        max-width: 100%;
+    }
+}
+/* Structure principale */
+.bts-comparison {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    gap: 40px;
+    align-items: center;
+}
+
+.option-explanation {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Séparateur central */
+.comparison-separator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 auto;
+}
+
+.separator-line {
+    height: 1px;
+    width: 100px;
+    background: #ddd;
+}
+
+.separator-text {
+    margin: 15px 0;
+    padding: 5px 15px;
+    background: #3498db;
+    color: white;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* En-têtes des options */
+.explanation-header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.explanation-header i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.sisr .explanation-header i {
+    color: #e67e22;
+}
+
+.explanation-header h4 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+/* Contenu */
+.core-focus {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px dashed #eee;
+}
+
+.core-focus h5 {
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.core-focus ul {
+    padding-left: 20px;
+}
+
+.core-focus li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.core-focus li::before {
+    content: "•";
+    color: #3498db;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.sisr .core-focus li::before {
+    color: #e67e22;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bts-comparison {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .comparison-separator {
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .separator-text {
+        margin: 0 15px;
+    }
+}
+/* Conteneur principal */
+.option-choice-indicator {
+  position: relative;
+  background: linear-gradient(135deg, rgba(230, 126, 34, 0.15) 0%, rgba(231, 76, 60, 0.15) 100%);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 25px 0;
+  border-left: 4px solid #e67e22;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Main animée */
+.animated-hand {
+  font-size: 2rem;
+  animation: 
+    wave 1.5s ease infinite,
+    pulse 2s ease infinite;
+  transform-origin: right center;
+}
+
+/* Badge "Option choisie" */
+.choice-badge {
+  background: #e67e22;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 3px 10px rgba(230, 126, 34, 0.3);
+}
+
+.choice-badge i {
+  font-size: 1.2em;
+}
+
+/* Animations */
+@keyframes wave {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  25% { transform: translateX(5px) rotate(10deg); }
+  50% { transform: translateX(0) rotate(0deg); }
+  75% { transform: translateX(5px) rotate(-10deg); }
+}
+
+@keyframes pulse {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+/* Effet au survol */
+.option-choice-indicator:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(230, 126, 34, 0.2);
+  transition: all 0.3s ease;
+}
+/* Animation au survol des options */
+.option-explanation {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateY(0);
+}
+
+.option-explanation:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Effet spécial pour l'option choisie (SISR) */
+.sisr {
+    position: relative;
+    z-index: 1;
+}
+
+.sisr::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px dashed #e67e22;
+    border-radius: 12px;
+    animation: pulseBorder 2s infinite;
+    opacity: 0;
+    z-index: -1;
+}
+
+.sisr:hover::before {
+    opacity: 1;
+}
+
+@keyframes pulseBorder {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.02); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+/* Animation spécifique pour la main */
+.option-choice-indicator:hover .animated-hand {
+    animation: 
+        wave 0.8s ease infinite,
+        pulse 1.5s ease infinite,
+        bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
