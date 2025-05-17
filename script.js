@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Mettre à jour l'année automatiquement
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Mettre à jour la date et l’heure
-    function updateDateTime() {
+     function updateDateTime() {
         const now = new Date();
 
         const optionsDate = {
@@ -58,4 +57,80 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     typeEffect();
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Gestion du clic sur les liens
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Retire 'active' de tous les liens
+            navLinks.forEach(l => l.classList.remove('active'));
+            
+            // Ajoute 'active' au lien cliqué
+            this.classList.add('active');
+        });
+    });
+    
+    // Gestion du scroll pour mettre à jour l'état actif
+    window.addEventListener('scroll', function() {
+        const fromTop = window.scrollY + 100;
+        
+        navLinks.forEach(link => {
+            const section = document.querySelector(link.hash);
+            
+            if (
+                section.offsetTop <= fromTop &&
+                section.offsetTop + section.offsetHeight > fromTop
+            ) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    // Gestion des clics
+    document.querySelectorAll('.sidebar nav .nav-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Retire 'active' de tous les liens
+            document.querySelectorAll('.sidebar nav .nav-link').forEach(l => {
+                l.classList.remove('active');
+            });
+            
+            // Ajoute 'active' au lien cliqué
+            this.classList.add('active');
+            
+            // Scroll vers la section
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+    
+    // Gestion du scroll
+    window.addEventListener('scroll', function() {
+        const fromTop = window.scrollY + 100;
+        
+        document.querySelectorAll('.sidebar nav .nav-link').forEach(link => {
+            const section = document.querySelector(link.getAttribute('href'));
+            if (section) {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (fromTop >= sectionTop && fromTop < sectionTop + sectionHeight) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            }
+        });
+    });
 });
