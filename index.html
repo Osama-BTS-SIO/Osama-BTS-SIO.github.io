@@ -10,9 +10,19 @@
 <body>
   <div class="container">
     <div class="sidebar">
+    <div class="emoji-orbit">
+    <div class="big-emoji">👨‍💻</div>
+    <div class="orbit-icons">
+        <i class="fas fa-server orbit-icon"></i> 
+        <i class="fas fa-code orbit-icon"></i>   
+        <i class="fas fa-shield-alt orbit-icon"></i> 
+    </div>
+    <h2>AZRAF Osama</h2>
+  </div>
+
+   
       <nav>
         <div class="datetime" id="datetime"></div>
-        <strong>AZRAF Osama</strong>
         <a href="#home" class="nav-link active"><i class="fas fa-home icon"></i><span> Accueil</span></a>
         <a href="#profile" class="nav-link"><i class="fas fa-id-card icon"></i><span> Profil</span></a>
         <a href="#bts" class="nav-link"><i class="fas fa-laptop-code icon"></i><span> BTS SIO</span></a>
@@ -43,23 +53,57 @@
     </section>
     
 
-      <section id="profile" class="content-section">
-        <div class="profile-container">
-          <h3 class="profile-title">Présentation</h3>
-          <div class="profile-text">
-            <p>Bonjour, moi c'est<strong> AZRAF Osama</strong>, actuellement je suis étudiant au lycée Aubanel à Avignon 🗺️. Je suis en première année de BTS Services Informatiques aux Organisations, option SISR, où j'apprends à maîtriser les réseaux et les infrastructures informatiques 💻.</p>
-            <p>Mon objectif est de poursuivre mes études et de me développer dans le domaine des réseaux.</p>
-            <p>Ce portfolio présente mon parcours, mes projets ainsi que mes expériences, qui témoignent de mon engagement et de ma progression dans le secteur informatique 👨‍💻.</p>
-            <p>Vous pouvez consulter mon CV ci-dessous.</p>
-          </div>
-          <div class="profile-image">
-            <img src="img-presentation.jpg" alt="Photo de AZRAF Osama">
-          </div>
-          <div class="cv-box">
-            <a href="cv-osama.pdf" target="_blank" rel="noopener noreferrer">Mon CV</a>
-          </div>
+     <section id="profile" class="content-section">
+    <div class="profile-container">
+        <h3 class="profile-title">Présentation</h3>
+        
+        <div class="profile-flex-container">
+            <div class="profile-text">
+                <div class="intro-box">
+                    <p>Bonjour, moi c'est <strong class="highlight-name">AZRAF Osama</strong>, étudiant en BTS SIO option SISR au lycée Aubanel à Avignon.</p>
+                    <div class="location-tag">
+                        <i class="fas fa-map-marker-alt"></i> Avignon, France
+                    </div>
+                </div>
+                
+                <div class="profile-details">
+                    <div class="detail-card">
+                        <i class="fas fa-user-graduate"></i>
+                        <h4>Formation</h4>
+                        <p>BTS SIO Option SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Objectif</h4>
+                        <p>Devenir administrateur systèmes et réseaux</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <i class="fas fa-laptop-code"></i>
+                        <h4>Spécialisation</h4>
+                        <p>Réseaux, Sécurité informatique, Virtualisation</p>
+                    </div>
+                </div>
+                
+                <div class="about-me">
+                    <p>Ce portfolio présente mon parcours, mes compétences et mes projets dans le domaine des infrastructures informatiques.</p>
+                </div>
+            </div>
+            
+             <div class="cv-sidebar"> <!-- Colonne CV sur le côté -->
+            <div class="modern-cv">
+                <a href="cv-osama.pdf" target="_blank">
+                    <i class="fas fa-download"></i> Télécharger mon CV
+                </a>
+                <div class="cv-hint">
+                    <i class="fas fa-info-circle"></i> Format PDF - 1 page
+                </div>
+            </div>
         </div>
-      </section>
+    </div>
+  </div>
+</section>
       <section id="bts" class="content-section">
     <div class="bts-header">
         <h3>BTS SIO</h3>
@@ -132,31 +176,213 @@
         <p>Les deux options partagent un tronc commun en première année avant la spécialisation aprés les vacances de noel de la premiere année.</p>
     </div>
 </section>
-      <section id="path" class="content-section">
-        <h3>Mon Parcours</h3>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-date">2023 - 2025</div>
-            <div class="timeline-content">
-              <h4>BTS SIO - Option SISR</h4>
-              <p>Apprentissage des réseaux, systèmes, sécurité et virtualisation.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2020 - 2023</div>
-            <div class="timeline-content">
-              <h4>BAC Pro SN</h4>
-              <p>Découverte du monde numérique, matériel, réseau et domotique.</p>
-            </div>
-          </div>
+      <section id="path" class="content-section journey-section">
+  <div class="journey-container">
+    <h2 class="journey-title">Mon Chemin Informatique</h2>
+    <p class="journey-subtitle">D'une passion d'enfance à une expertise professionnelle</p>
+    
+    <div class="journey-path">
+      <!-- Étape Passion -->
+      <div class="journey-step" data-year="Enfance">
+        <div class="step-marker highlight"></div>
+        <div class="step-content highlight">
+          <h3><i class="fas fa-heart"></i> Passion naissante</h3>
+          <p>Dès mon plus jeune âge :</p>
+          <ul class="step-skills">
+            <li><i class="fas fa-gamepad"></i> Fascination pour la technologie</li>
+            <li><i class="fas fa-question"></i>Fasciné par le fonctionnement des systèmes informatiques</li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <!-- Étape Collège -->
+      <div class="journey-step" data-year="Collège">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <h3>Collège Alphonse Daudet</h3>
+          <p>Pendant le collège, j'ai commencer à comprendre l'informatique avec :</p>
+          <ul class="step-skills">
+            <li><i class="fas fa-laptop-house"></i> Expérimentation maison</li>
+            <li><i class="fas fa-wrench"></i> Dépannage informatique basique</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Étape Lycée Pro -->
+      <div class="journey-step" data-year="Lycée">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <h3>Bac Pro MSPC</h3>
+          <p>Dès mon parcours bac pro, j'ai construit des compétences clés pour ma suite d'etudes :</p>
+          <ul class="step-skills">
+            <li><i class="fas fa-network-wired"></i>J'ai acquis un esprit d'équipe, de la concentration, des compétences en communication, de l'autonomie et une prise d'initiative lors de mes stages. </li>
+            <li><i class="fas fa-tools"></i> Bidouillage informatique à la maison</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Étape BTS -->
+      <div class="journey-step" data-year="Aujourd'hui">
+        <div class="step-marker"></div>
+        <div class="step-content">
+          <h3><i class="fas fa-graduation-cap"></i> BTS SIO SISR</h3>
+          <p>La chance de transformer ma passion :</p>
+          <ul class="step-skills">
+            <li><i class="fas fa-user-tie"></i> Mon ambition est de devenir Administrateur Systèmes et Réseaux, un métier qui allie ma passion pour les infrastructures IT et mes compétences techniques acquises en BTS SIO.</li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section id="internships" class="content-section">
-        <h3>Stages</h3>
-        <p>Détails sur les stages effectués...</p>
-      </section>
-
+    <div class="internships-container">
+        <h2>Mes Expériences Professionnelles</h2>
+        <p class="section-subtitle">Parcours en maintenance industrielle et future expérience en informatique</p>
+        
+        <!-- Stage 1 (Première expérience) -->
+        <div class="internship">
+            <div class="internship-header">
+                <h3 class="internship-title">Maintenance Industrielle</h3>
+                <span class="internship-period">Novembre 2022 - Décembre 2022</span>
+            </div>
+            
+            <div class="internship-company">
+                <i class="fas fa-industry"></i>
+                <span>Un Air D'ici, Juste Bio, Carpentras</span>
+            </div>
+            
+            <div class="internship-description">
+                <p>Première expérience en milieu professionnel :</p>
+                <ul>
+                    <li>Maintenance préventive des équipements industriels</li>
+                    <li>Travail en équipe avec des techniciens expérimentés</li>
+                    <li>Développement de mes compétences en organisation et rigueur</li>
+                </ul>
+            </div>
+            
+            <div class="internship-skills">
+                <span class="skill-tag">Maintenance préventive</span>
+                <span class="skill-tag">Travail d'équipe</span>
+                <span class="skill-tag">Organisation</span>
+            </div>
+        </div>
+        
+        <!-- Stage 2 -->
+        <div class="internship">
+            <div class="internship-header">
+                <h3 class="internship-title">Maintenance Industrielle</h3>
+                <span class="internship-period">Mars 2023 - Avril 2023</span>
+            </div>
+            
+            <div class="internship-company">
+                <i class="fas fa-tools"></i>
+                <span>Un Air D'ici, Juste Bio, Carpentras</span>
+            </div>
+            
+            <div class="internship-description">
+                <p>Deuxième stage avec des responsabilités accrues :</p>
+                <ul>
+                    <li>Maintenance corrective des machines</li>
+                    <li>Diagnostic des pannes techniques</li>
+                    <li>Application des procédures de remise en service</li>
+                </ul>
+            </div>
+            
+            <div class="internship-skills">
+                <span class="skill-tag">Diagnostic</span>
+                <span class="skill-tag">Maintenance corrective</span>
+                <span class="skill-tag">Procédures techniques</span>
+            </div>
+        </div>
+        
+        <!-- Stage 3 -->
+        <div class="internship">
+            <div class="internship-header">
+                <h3 class="internship-title">Maintenance Améliorative</h3>
+                <span class="internship-period">Octobre 2023 - Novembre 2023</span>
+            </div>
+            
+            <div class="internship-company">
+                <i class="fas fa-cogs"></i>
+                <span>Un Air D'ici, Juste Bio, Carpentras</span>
+            </div>
+            
+            <div class="internship-description">
+                <p>Troisième stage avec des missions plus complexes :</p>
+                <ul>
+                    <li>Maintenance améliorative des équipements</li>
+                    <li>Optimisation des performances machines</li>
+                    <li>Amélioration de la fiabilité des systèmes</li>
+                </ul>
+            </div>
+            
+            <div class="internship-skills">
+                <span class="skill-tag">Optimisation</span>
+                <span class="skill-tag">Fiabilité</span>
+                <span class="skill-tag">Performance</span>
+            </div>
+        </div>
+        
+        <!-- Stage 4 (Dernière expérience) -->
+        <div class="internship">
+            <div class="internship-header">
+                <h3 class="internship-title">Projet d'Amélioration Technique</h3>
+                <span class="internship-period">Janvier 2024 - Février 2024</span>
+            </div>
+            
+            <div class="internship-company">
+                <i class="fas fa-lightbulb"></i>
+                <span>Un Air D'ici, Carpentras</span>
+            </div>
+            
+            <div class="internship-description">
+                <p>Dernier stage avec une mission projet :</p>
+                <ul>
+                    <li>Conception d'un projet d'amélioration technique</li>
+                    <li>Identification des besoins spécifiques</li>
+                    <li>Proposition de solutions innovantes</li>
+                </ul>
+            </div>
+            
+            <div class="internship-skills">
+                <span class="skill-tag">Innovation</span>
+                <span class="skill-tag">Gestion de projet</span>
+                <span class="skill-tag">Solution technique</span>
+            </div>
+        </div>
+        
+        <!-- Stage BTS SIO SISR (à venir) -->
+        <div class="internship future">
+            <div class="internship-header">
+                <h3 class="internship-title">Stage BTS SIO Option SISR</h3>
+                <span class="internship-period">À venir</span>
+            </div>
+            
+            <div class="internship-company">
+                <i class="fas fa-laptop-code"></i>
+                <span>À déterminer</span>
+            </div>
+            
+            <div class="internship-description">
+                <p>Future expérience dans le domaine des systèmes et réseaux :</p>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            <div class="internship-skills">
+                <span class="skill-tag"></span>
+                <span class="skill-tag"></span>
+                <span class="skill-tag"></span>
+            </div>
+        </div>
+    </div>
+</section>
       <section id="skills" class="content-section">
         <h3>Compétences</h3>
         <p>Liste des compétences techniques et personnelles...</p>
@@ -190,6 +416,6 @@
   </div>
 
   <script src="script.js"></script>
+  
 </body>
-</html>
 </html>
