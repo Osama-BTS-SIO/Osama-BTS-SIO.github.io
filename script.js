@@ -134,3 +134,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // 1. Masque toutes les sections
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.remove('active');
+    });
+    
+    // 2. Affiche LA BONNE SECTION
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    if (targetSection) {
+      targetSection.classList.add('active');
+      
+      // 3. Scroll instantané (sans animation)
+      window.scrollTo({
+        top: targetSection.offsetTop - 20,
+        behavior: 'instant'
+      });
+    }
+  });
+});
