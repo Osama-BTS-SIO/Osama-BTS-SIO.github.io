@@ -955,3 +955,531 @@ h2 {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+/* ===== SECTION PARCOURS ===== */
+.light-bg {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #4a6bdf, #6a11cb);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+}
+
+/* CHEMIN PARCOURS - VERSION FINALE */
+.journey-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 0;
+}
+
+.journey-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.journey-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #000000; /* Texte en noir */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.journey-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #000000; /* Texte en noir */
+  margin-bottom: 50px;
+  font-weight: 500;
+}
+
+/* Ligne de progression */
+.journey-path {
+  position: relative;
+  padding-left: 50px;
+  margin-top: 50px;
+}
+
+.journey-path::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 4px;
+  background: linear-gradient(to bottom, #3498db, #e67e22);
+  border-radius: 2px;
+}
+
+/* Éléments du parcours */
+.journey-step {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.step-content {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-left: 4px solid #3498db;
+}
+
+.step-content h3 {
+  color: #000000; /* Titre en noir */
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+}
+
+.step-content p {
+  color: #333333; /* Texte foncé */
+  margin-bottom: 10px;
+}
+
+.step-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.step-skills li {
+  background: rgba(52, 152, 219, 0.1);
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000; /* Texte en noir */
+}
+
+/* Points de repère */
+.step-marker {
+  position: absolute;
+  left: -44px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #3498db;
+  border: 4px solid white;
+  box-shadow: 0 0 0 2px #3498db;
+}
+
+.step-marker::after {
+  content: attr(data-year);
+  position: absolute;
+  left: -120px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #000000; /* Texte en noir */
+  font-weight: bold;
+}
+
+/* Étape "passion" en évidence */
+.highlight .step-marker {
+  background: #e67e22;
+  box-shadow: 0 0 0 2px #e67e22;
+  animation: pulse 2s infinite;
+}
+
+.highlight .step-content {
+  border-left-color: #e67e22;
+  background: linear-gradient(to right, white 90%, rgba(230, 126, 34, 0.05));
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .journey-path {
+    padding-left: 30px;
+  }
+  
+  .step-marker::after {
+    left: -90px;
+    font-size: 0.8rem;
+  }
+}
+/* ===== SECTION STAGES ===== */
+#internships {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 80px 40px;
+}
+
+.internships-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.internship {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid #9b59b6;
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.internship-title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.internship-period {
+    background: #9b59b6;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.internship-company {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.internship-description {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.internship-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.skill-tag {
+    background: rgba(155, 89, 182, 0.1);
+    color: #9b59b6;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+/* Style pour le stage à venir */
+.internship.future {
+    opacity: 0.8;
+    border-left: 4px solid #95a5a6;
+    background-color: #f8f9fa;
+}
+
+.internship.future .internship-title {
+    color: #95a5a6;
+}
+
+.internship.future .skill-tag {
+    background: rgba(149, 165, 166, 0.1);
+    color: #95a5a6;
+    border: 1px solid rgba(149, 165, 166, 0.3);
+}
+
+/* Animation au survol */
+.internship:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .internship-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .internship-period {
+        align-self: flex-start;
+    }
+}
+.emoji-orbit {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+}
+
+.big-emoji {
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.orbit-icons {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    animation: rotateOrbit 15s linear infinite;
+}
+
+.orbit-icon {
+    position: absolute;
+    color: #e67e22;
+    font-size: 1.2rem;
+}
+
+.orbit-icon:nth-child(1) { top: 0; left: 50%; transform: translateX(-50%); }
+.orbit-icon:nth-child(2) { top: 50%; right: 0; transform: translateY(-50%); }
+.orbit-icon:nth-child(3) { bottom: 0; left: 50%; transform: translateX(-50%); }
+
+@keyframes rotateOrbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+.emoji-orbit:hover .orbit-icons {
+    animation-play-state: paused;
+}
+.emoji-orbit h2 {
+    color: #e67e22 !important; 
+    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: center;
+    animation: textGlow 2s infinite alternate; 
+}
+@keyframes textGlow {
+    from { text-shadow: 0 0 2px rgba(230, 126, 34, 0.5); }
+    to { text-shadow: 0 0 8px rgba(230, 126, 34, 0.8); }
+}
+/* ===== SECTION PRÉSENTATION AVEC CV SUR LE CÔTÉ ===== */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-flex-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1100px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.profile-text-and-cards {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Titre */
+.profile-title {
+    text-align: center;
+    position: relative;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-size: 2.2rem;
+}
+
+.profile-title::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #e67e22;
+}
+
+/* Intro */
+.intro-box {
+    background: rgba(230, 126, 34, 0.1);
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid #e67e22;
+    margin-bottom: 30px;
+}
+
+.highlight-name {
+    color: #e67e22;
+    font-weight: 700;
+}
+
+.location-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 20px;
+    background: rgba(52, 152, 219, 0.1);
+    border-radius: 20px;
+    color: #3498db;
+    font-size: 0.9rem;
+}
+
+/* Cartes */
+.profile-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.detail-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.detail-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.detail-card i {
+    font-size: 1.8rem;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.detail-card h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.detail-card p {
+    color: #7f8c8d;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Texte about */
+.about-me {
+    color: #555;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Colonne CV */
+.cv-sidebar {
+    margin-top: 300px;
+    width: 300px;
+    position: sticky;
+    top: 20px;
+}
+
+.modern-cv {
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(230,126,34,0.1) 0%, rgba(52,152,219,0.1) 100%);
+    border-radius: 10px;
+    border: 2px dashed rgba(230,126,34,0.3);
+    text-align: center;
+}
+
+.modern-cv a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 35px;
+    background: #e67e22;
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.modern-cv a:hover {
+    background: #d35400;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(230,126,34,0.3);
+}
+
+.cv-hint {
+    margin-top: 12px;
+    font-size: 0.85rem;
+    color: #95a5a6;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .profile-flex-container {
+        flex-direction: column;
+    }
+    
+    .cv-sidebar {
+        width: 100%;
+        position: static;
+        margin-top: 40px;
+    }
+    
+    .modern-cv {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .intro-box {
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-title {
+        font-size: 1.8rem;
+    }
+    
+    .modern-cv a {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
