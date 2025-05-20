@@ -157,3 +157,71 @@ document.querySelectorAll('.nav-link').forEach(link => {
     }
   });
 });
+// Animer les barres de compétences
+document.addEventListener('DOMContentLoaded', function() {
+  const skillItems = document.querySelectorAll('.skill-item');
+  
+  skillItems.forEach(item => {
+    const level = item.getAttribute('data-level');
+    const progressBar = item.querySelector('.skill-progress');
+    
+    // Définir la largeur finale avec la variable CSS
+    progressBar.style.setProperty('--level', `${level}%`);
+    
+    // Délai pour déclencher l'animation
+    setTimeout(() => {
+      progressBar.style.width = `${level}%`;
+    }, 100);
+  });
+  
+  // Effet parallax pour la section
+  const skillsSection = document.getElementById('skills');
+  window.addEventListener('scroll', function() {
+    const scrollPosition = window.pageYOffset;
+    skillsSection.style.backgroundPositionY = scrollPosition * 0.5 + 'px';
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  // Animation des barres de compétences
+  const skills = document.querySelectorAll('.skill-item');
+  
+  skills.forEach(skill => {
+    const level = skill.getAttribute('data-level');
+    const progressBar = skill.querySelector('.skill-progress');
+    const percentText = skill.querySelector('.skill-percent');
+    
+    // Délai pour l'animation
+    setTimeout(() => {
+      progressBar.style.width = `${level}%`;
+      percentText.textContent = `${level}%`; // Met à jour le texte
+    }, 100);
+  });
+  
+  // Optionnel : Re-animer au scroll
+  const skillSection = document.getElementById('skills');
+  let animated = false;
+  
+  window.addEventListener('scroll', function() {
+    if (isElementInViewport(skillSection) && !animated) {
+      animated = true;
+      animateSkills();
+    }
+  });
+  
+  function animateSkills() {
+    let delay = 0;
+    skills.forEach(skill => {
+      setTimeout(() => {
+        skill.classList.add('animate');
+      }, delay);
+      delay += 150;
+    });
+  }
+  
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top <= (window.innerHeight || document.documentElement.clientHeight) / 2
+    );
+  }
+});
