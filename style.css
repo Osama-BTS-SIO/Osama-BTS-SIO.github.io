@@ -1958,3 +1958,18 @@ h2 {
   color: #000000; /* Noir pour la date */
   opacity: 0.8; /* Légère transparence pour la date */
 }
+.internship.future {
+    opacity: 1; /* Rendre le stage totalement visible */
+    border-left: 4px solid #9b59b6; /* Même violet que les autres stages */
+    background-color: white; /* Même fond que les autres stages */
+}
+
+.internship.future .internship-title {
+    color: #2c3e50; /* Couleur du texte titre comme les autres */
+}
+
+.internship.future .skill-tag {
+    background: rgba(155, 89, 182, 0.1); /* Même fond des tags que les autres */
+    color: #9b59b6; /* Couleur texte des tags */
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
