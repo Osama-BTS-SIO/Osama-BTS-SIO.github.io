@@ -225,3 +225,21 @@ document.addEventListener('DOMContentLoaded', function() {
     );
   }
 });
+document.querySelectorAll('.more-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const modalId = btn.getAttribute('data-modal');
+    document.getElementById(modalId).style.display = 'flex';
+  });
+});
+
+document.querySelectorAll('.close').forEach(close => {
+  close.addEventListener('click', () => {
+    close.closest('.modal').style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  if (e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  }
+});
