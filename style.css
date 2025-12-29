@@ -2490,3 +2490,205 @@ h2 {
 .realisations-intro p {
   color: #000; /* Texte noir */
 }
+#path {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.entreprise-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.entreprise-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.entreprise-subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.entreprise-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.entreprise-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.entreprise-text {
+  flex: 1;
+}
+
+.entreprise-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.entreprise-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.entreprise-image {
+  flex: 1;
+  text-align: center;
+}
+
+.entreprise-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.entreprise-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .entreprise-block,
+  .entreprise-block.reverse {
+    flex-direction: column;
+  }
+  .entreprise-block.reverse {
+    flex-direction: column;
+  }
+  .entreprise-image {
+    margin-bottom: 20px;
+  }
+}
+.entreprise-infos-general {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.entreprise-infos-general ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.entreprise-infos-general li {
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.entreprise-infos-general i {
+  color: #2c3e50;
+}
+/* Container général */
+#internships {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.internships-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.internships-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+/* Chaque stage */
+.internship h3 {
+  font-size: 26px;
+  color: #34495e;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Timeline par semaine */
+.week {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.week:nth-child(even) .week-text {
+  order: 2;
+}
+
+.week:nth-child(even) .week-image {
+  order: 1;
+}
+
+/* Texte de la semaine */
+.week-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+}
+
+.week-text h4 {
+  font-size: 20px;
+  color: #16a085;
+  margin-bottom: 15px;
+}
+
+.week-text ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #555;
+}
+
+/* Image de la semaine */
+.week-image {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+.week-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.week-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .week {
+    flex-direction: column;
+  }
+  .week-text, .week-image {
+    order: 0 !important;
+  }
+}
