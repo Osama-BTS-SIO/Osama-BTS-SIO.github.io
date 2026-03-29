@@ -2930,7 +2930,7 @@ h2 {
 
 .veille-section {
   padding: 80px 10%;
-  background: url("fond-veille.png") no-repeat center/cover;
+  background: #fff;;
   position: relative;
 }
 
@@ -2938,13 +2938,13 @@ h2 {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
+  background: rgba(255, 255, 255, 0.75);
 }
 
 .veille-container {
   position: relative;
   z-index: 1;
-  color: white;
+  color: rgb(155, 148, 148);
 }
 
 /* TITRES */
@@ -2960,7 +2960,7 @@ h2 {
   max-width: 850px;
   margin: 0 auto 50px;
   line-height: 1.7;
-  color: #d1d5db;
+  color: #000000;
 }
 
 /* BLOCS */
@@ -2981,7 +2981,7 @@ h2 {
 
 .veille-block h3 {
   margin-bottom: 10px;
-  color: #60a5fa;
+  color: #0073ff;
 }
 
 /* ARTICLES */
@@ -3030,24 +3030,131 @@ h2 {
 
 .article-content p {
   font-size: 0.95rem;
-  color: #d1d5db;
+  color: #000000;
 }
 
 .veille-date {
   display: block;
   margin-top: 10px;
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: #000000;
 }
 .veille-container {
   position: relative;
   z-index: 1;
-  color: #ffffff; /* TEXTE BLANC */
+  color: #000000; /* TEXTE BLANC */
 }
 
 .veille-intro,
 .article-content p,
 .veille-block p,
 .veille-block li {
-  color: #f1f1f1;
+  color: #000000;
+}
+.veille-outils {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.veille-outils h3 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.veille-outils ul {
+  list-style: none;
+  padding: 0;
+}
+
+.veille-outils li {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.veille-outils i {
+  color: #e67e22;
+  font-size: 1.2rem;
+}
+.projects-section {
+  padding: 80px 10%;
+  background: #ffffff;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+.project-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* BOUTON */
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e67e22;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background: #d35400;
 }
