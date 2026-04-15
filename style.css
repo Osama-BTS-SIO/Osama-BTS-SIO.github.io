@@ -3158,3 +3158,80 @@ h2 {
 .project-btn:hover {
   background: #d35400;
 }
+.internships-section {
+    background: #f9fbfd;
+    padding: 60px 20px;
+}
+
+.internships-title {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.internships-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.internships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+}
+
+.internship-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+}
+
+.internship-logo {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.internship-company {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.internship-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.internship-desc {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.internship-card ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.internship-card li {
+    margin-bottom: 8px;
+}
+
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-tags span {
+    background: #eef3f7;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
